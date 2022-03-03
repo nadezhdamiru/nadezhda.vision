@@ -1,5 +1,5 @@
 export const View = (props, children) => {
-  const { until = 'January 01, 2030 00:00:00 UTC', title } = props
+  const { until = 'January 01, 2030 00:00:00 UTC', title, after } = props
   let { dayString = 'DAY' } = props
 
   const waitFor = new Date(until).getTime()
@@ -26,8 +26,12 @@ export const View = (props, children) => {
         title && h2(title),
         waitFor <= now && children,
 
-        d > 0 && p({ class: 'Day' }, `${d} DAYS`),
-        waitFor > now && p({ class: 'Hour' }, `${h}:${m}:${s}`),
+        div({ class: 'TimeLeft' }, [
+          d > 0 && p({ class: 'Day' }, `${d} DAYS`),
+          waitFor > now && p({ class: 'Hour' }, `${h}:${m}:${s}`),
+        ]),
+
+        after && div({ class: 'After' }, after),
       ]),
     ]),
   ])
@@ -48,11 +52,11 @@ export const style = vars => ({
   },
 
   '.Background': {
-    // background: `${vars.background.dark}80`,
-    // borderRadius: '1em',
-    // textAlign: 'center',
-    padding: '0.5em',
-    // display: 'inline-block',
+    padding: '1em 0',
+  },
+
+  '.TimeLeft': {
+    background: `linear-gradient(to bottom, ${vars.background.dark}20 50.1%, ${vars.background.light} 50%)`,
   },
 
   '.Day, .Hour': {

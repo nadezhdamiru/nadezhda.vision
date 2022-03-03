@@ -7,7 +7,5 @@ export default {
   CNAME: 'nadezhda.art',
   IGNORED_STATIC: 'xcf',
 
-  HOIST: [
-    'NoSpy',
-  ],
+  HOIST: ['NoSpy'],
 }

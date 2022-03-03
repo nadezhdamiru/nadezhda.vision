@@ -3,9 +3,7 @@ export const View = props => {
   // const { menu, hash, url } = props
 
   return div({ class: 'Header' }, [
-    div({ class: 'Container' }, [
-      LanguageSwitch({ ...props, sep: '/', showActive: true }),
-    ]),
+    div({ class: 'Container' }, [LanguageSwitch({ ...props, sep: '/', showActive: true })]),
   ])
 }
 

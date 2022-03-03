@@ -1,4 +1,5 @@
-export const View = (props, children) => div({ class: 'PageWrapper' }, [
+export const View = (props, children) =>
+  div({ class: 'PageWrapper' }, [
     div({ id: 'hero' }, [
       Picture({
         class: 'profile',
@@ -25,6 +26,7 @@ export const View = (props, children) => div({ class: 'PageWrapper' }, [
       role: 'presentation',
     }),
 
-    Countdown({ until: 'March 6, 2022 10:00:00', title: 'Instagram' }),
-    Countdown({ until: 'March 10, 2022 16:00:00', title: 'Artificial Museum' }),
+    Countdown({ until: 'March 6, 2022 10:00:00', title: 'Instagram', after: props.instagram }),
+
+    Countdown({ until: 'March 10, 2022 16:00:00', title: 'Artificial Museum', after: props.arm }),
   ])

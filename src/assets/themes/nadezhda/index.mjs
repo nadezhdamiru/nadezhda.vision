@@ -96,10 +96,15 @@ export default (v = {}) => {
     },
 
     picture: {
+      display: 'inline-block',
+
       '&.profile': {
         width: '90%',
         height: 'auto',
         margin: '0 0 3em',
+      },
+      '&.full': {
+        margin: '2em 0 0',
       },
     },
 
