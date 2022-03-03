@@ -1,0 +1,46 @@
+{
+  "name": "nadezhda",
+  "version": "0.23.5",
+  "private": true,
+  "author": "Nadezhda",
+  "description": "Nadezhda",
+  "license": "AGPL-3.0",
+  "homepage": "https://nadezhda.art",
+  "type": "module",
+  "engines": {
+    "node": ">=14.2.0"
+  },
+  "scripts": {
+    "start": "magic dev",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs",
+    "build": "NODE_ENV=production magic build --no-check-links-exit",
+    "devbuild": "magic build --no-check-links-exit",
+    "prod": "NODE_ENV=production magic build serve",
+    "dev": "magic dev",
+    "publish": "magic publish",
+    "connect": "magic connect"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadezhdamiru/nadezhda.art.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nadezhdamiru/nadezhda.art/issues"
+  },
+  "dependencies": {
+    "@magic-libraries/replace-slash-slash": "0.0.1",
+    "@magic-modules/language-switch": "0.0.4",
+    "@magic-modules/no-spy": "0.0.6",
+    "@magic-modules/video-embed": "0.0.6",
+    "@magic/core": "0.0.137"
+  },
+  "devDependencies": {
+    "@magic/format": "0.0.38",
+    "@magic/test": "0.2.6"
+  }
+}
