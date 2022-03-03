@@ -19,10 +19,11 @@ export const actions = {
 }
 
 export const style = vars => ({
+  position: 'fixed',
+  backgroundColor: vars.background.light,
+
   '.Container': {
-    maxWidth: '1300px',
-    margin: '0 auto',
-    padding: '0 2vw 0 0',
+    display: 'inline-block',
   },
 
   li: {
