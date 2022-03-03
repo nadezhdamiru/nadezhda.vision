@@ -68,9 +68,18 @@ export default (v = {}) => {
     '.LanguageSwitch': {
       top: 0,
       right: 0,
+      fontSize: '1em',
 
-      'a.active': {
-        textDecoration: 'none',
+      a: {
+        color: vars.text.light,
+
+        '&:hover': {
+          color: vars.text.light,
+        },
+
+        '&.active': {
+          textDecoration: 'none',
+        },
       },
     },
 
@@ -108,6 +117,8 @@ export default (v = {}) => {
     },
 
     '.Page': {
+      padding: '3em 0 0',
+
       h1: {
         fontSize: '2em',
         padding: 0,
