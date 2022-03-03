@@ -1,5 +1,4 @@
 export const state = {
-  lang: 'de',
   name: 'Nadjeshda Miru',
   subTitle: 'Vision',
   description: 'Wenn Unrecht zu Recht wird, wird Widerstand zur Pflicht!',
