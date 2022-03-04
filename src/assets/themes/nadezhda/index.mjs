@@ -52,7 +52,7 @@ export default (v = {}) => {
       "Segoe UI Emoji",
       "Segoe UI Symbol"
     `,
-      fontSize: '20px',
+      fontSize: '16px',
     },
 
     '#Magic': {
@@ -135,10 +135,18 @@ export default (v = {}) => {
       },
     },
 
+    '.title': {
+      margin: '0 0 3em',
+    },
+
     '@media screen and (min-width: 600px)': {
+      body: {
+        fontSize: '20px',
+      },
       '.title': {
         float: 'left',
         maxWidth: '57%',
+        margin: 0,
       },
 
       picture: {
