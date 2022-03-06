@@ -9,28 +9,19 @@ export const state = {
 
 export const View = props =>
   PageWrapper({ ...props, language: 'ua' }, [
-    p(
-      b([
-        'Ukrainian Manifest text',
-        'The first few paragraphs',
-        'are bold.',
-        'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
+    p({ class: 'Statement' }, b("Коли Неправда стає за Правду, супротив стає обов'язком.")),
+
+    div({ class: 'Story' }, 'Надія 3 метри заввишки і важить 100 тон.Надія ще дитина і муситьзараз для вас подорослішати.Надія вроджений велетень, й остання зі свого роду.В неї нелегка доля, але вона її несе, вона прийшла щоб залишитись, бо як остання зі свого роду вона житиме вічне.Вона сидить тут наперекір ненависті, насиллю, війні, примусу, і тримає щит миру.'),
+
+    Quote({ author: 'Іван Світличний, 1977' }, [
+      p([
+        i('Свободу не втікати з бою, Свободу чесності в бою,'),
+        i('Любити те, що сам люблю, А не підказане тобою,'),
+        i('Свободу за любов мою Хоч і накласти головою,'),
+        i('А бути все ж самим собою, — Не проміняю на твою,'),
+        i('Ліврейську, жебрану, ледачу, Вертку, заляпану, як здачу,'),
+        i('Свободу хама й холуя.Несу свободу в суд, за грати,'),
+        i('Мою від мене не забрати — І здохну, а вона — моя.'),
       ]),
-    ),
-
-    p([
-      'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
-      'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
-      'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
     ]),
-
-    p(
-      'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
-    ),
-    p(
-      'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
-    ),
-    p(
-      'Ukrainian Manifest text, rest of text some longer lines to test how the wrapping works and how it all looks with content.',
-    ),
   ])
