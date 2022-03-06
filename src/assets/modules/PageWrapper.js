@@ -26,7 +26,7 @@ export const View = (props, children) =>
       role: 'presentation',
     }),
 
-    Countdown({ until: 'March 6, 2022 10:00:00', title: 'Instagram', after: props.instagram }),
+    Countdown({ until: 'March 6, 2022 10:00:00', title: 'Instagram', after: props.instagram, url: 'https://www.instagram.com/nadezhda_miru/' }),
 
     Countdown({ until: 'March 10, 2022 16:00:00', title: 'Artificial Museum', after: props.arm }),
   ])
