@@ -37,7 +37,7 @@
     "@magic-modules/language-switch": "0.0.4",
     "@magic-modules/no-spy": "0.0.6",
     "@magic-modules/video-embed": "0.0.6",
-    "@magic/core": "0.0.137"
+    "@magic/core": "0.0.138"
   },
   "devDependencies": {
     "@magic/format": "0.0.38",
