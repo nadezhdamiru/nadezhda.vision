@@ -1,7 +1,7 @@
 export const state = {
   name: 'Надежда Миру',
   subTitle: 'Видіння',
-  description: "Коли Неправда стає за Правду, супротив стає обов\\'язком.",
+  description: "Коли Неправда стає за Правду, супротив стає обов'язком.",
 
   instagram: 'Share me and spread the message.',
   arm: 'Position me and raise a monument.',
