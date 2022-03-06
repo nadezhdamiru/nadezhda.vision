@@ -1,5 +1,5 @@
 export const View = (props, children) => {
-  const { until = 'January 01, 2030 00:00:00 UTC', title, after } = props
+  const { until = 'January 01, 2030 00:00:00 UTC', title, after, url } = props
   let { dayString = 'DAY' } = props
 
   const waitFor = new Date(until).getTime()
@@ -23,7 +23,7 @@ export const View = (props, children) => {
   return div({ class: 'Countdown' }, [
     div({ class: 'Placeholder' }, [
       div({ class: 'Background' }, [
-        title && h2(title),
+        title && h2(url ? Link({ to: url, text: title }) : title),
         waitFor <= now && children,
 
         div({ class: 'TimeLeft' }, [
