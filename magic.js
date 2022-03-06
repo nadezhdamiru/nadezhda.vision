@@ -1,10 +1,10 @@
 export default {
   ROOT: 'src',
   WEB_ROOT: '/',
-  URL: 'nadezhda.art',
+  URL: 'nadezhda.vision',
   PUBLIC: 'docs',
   THEME: 'nadezhda',
-  CNAME: 'nadezhda.art',
+  CNAME: 'nadezhda.vision',
   IGNORED_STATIC: 'xcf',
 
   HOIST: ['NoSpy'],

@@ -1,11 +1,11 @@
 {
-  "name": "nadezhda",
+  "name": "nadezhda.vision",
   "version": "0.23.5",
   "private": true,
   "author": "Nadezhda",
   "description": "Nadezhda",
   "license": "AGPL-3.0",
-  "homepage": "https://nadezhda.art",
+  "homepage": "https://nadezhda.vision",
   "type": "module",
   "engines": {
     "node": ">=14.2.0"
@@ -27,10 +27,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nadezhdamiru/nadezhda.art.git"
+    "url": "git+https://github.com/nadezhdamiru/nadezhda.vision.git"
   },
   "bugs": {
-    "url": "https://github.com/nadezhdamiru/nadezhda.art/issues"
+    "url": "https://github.com/nadezhdamiru/nadezhda.vision/issues"
   },
   "dependencies": {
     "@magic-libraries/replace-slash-slash": "0.0.1",
