@@ -3,8 +3,8 @@ export const state = {
   subTitle: 'Видіння',
   description: "Коли Неправда стає за Правду, супротив стає обов'язком.",
 
-  instagram: 'Share me and spread the message.',
-  arm: 'Position me and raise a monument.',
+  instagram: 'Поділіться мною та поширюйте повідомлення.',
+  arm: 'Поставте мене і поставте пам’ятник.',
 }
 
 export const View = props =>

@@ -3,8 +3,8 @@ export const state = {
   subTitle: 'Vision',
   description: 'Wenn Unrecht zu Recht wird, wird Widerstand zur Pflicht!',
 
-  instagram: 'Teile mich und verbreite die Botschaft.',
-  arm: 'Positioniere mich und setze ein Denkmal',
+  instagram: 'Teile meine Seite und verbreite die Botschaft.',
+  arm: 'Positioniere meine Statue und setze ein Denkmal.',
 }
 
 export const View = props =>
