@@ -65,6 +65,14 @@ export default (v = {}) => {
       },
     },
 
+    a: {
+      color: vars.text.light,
+
+      '&:hover': {
+        color: vars.text.light,
+      },
+    },
+
     '.LanguageSwitch': {
       top: 0,
       right: 0,
