@@ -33,5 +33,5 @@ export const View = (props, children) =>
       url: 'https://www.instagram.com/nadezhda_miru/',
     }),
 
-    Countdown({ until: 'March 10, 2022 16:00:00', title: 'Artificial Museum', after: props.arm }),
+    Countdown({ until: 'March 10, 2022 16:00:00', title: 'Artificial Museum', after: props.arm, url: 'https://artificialmuseum.com/moon/#z=7&lat=14.6&lng=54.7&s=list&d=nadiasvision&p=nadiasvision' }),
   ])
